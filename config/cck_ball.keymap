@@ -14,7 +14,7 @@
 
 &msc {
     acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <300>;       // 300
+    time-to-max-speed-ms = <400>;       // 300
     delay-ms = <0>;                   // 0
 };
 
@@ -94,7 +94,7 @@
         num_layers {
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp N6        &kp N7        &kp N8        &kp N9        &kp N0  &kp DEL
-&kp CAPS   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &kp F11
+&trans     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none   &kp F11
 &trans     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &kp F12
 &trans     &trans  &trans  &trans  &trans  &trans   &mkp LCLK     &mo 3         &trans        &trans        &trans  &trans
             >;
@@ -134,7 +134,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,
+                // 编码器1：上下滚动,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
