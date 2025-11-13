@@ -134,10 +134,23 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
+        };
+
+        Nav {
+            bindings = <
+&trans  &trans        &trans        &trans            &trans          &trans  &kp PAGE_UP    &kp HOME       &kp UP         &kp END        &kp K_REDO  &kp ESCAPE
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp PAGE_DOWN  &kp LEFT       &kp DOWN       &kp RIGHT      &trans      &sys_reset
+&trans  &trans        &trans        &trans            &trans          &trans  &kp K_LOCK     &kp LS(LC(V))  &kp LS(LC(C))  &kp LS(LC(T))  &trans      &bootloader
+&trans  &trans        &trans        &trans            &trans          &trans  &trans         &trans         &trans         &trans         &trans      &studio_unlock
+            >;
+
+            sensor-bindings =
+                <&scroll_vertical_encoder>,
+                <&scroll_horizontal_encoder>;
         };
     };
 };
